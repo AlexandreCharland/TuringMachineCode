@@ -1,3 +1,4 @@
+#This program calculate the remainder of the input mod 3
 import sys
 
 bitInput = sys.argv[1]
