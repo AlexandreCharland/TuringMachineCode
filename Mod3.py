@@ -10,7 +10,7 @@ def a(tape, i):
     elif (tape[i] == "1"):
         b(tape, i+1)
     else:
-        print(tape)
+        qa(tape, i-1)
 
 def b(tape, i):
     if (tape[i] == "0"):
@@ -19,7 +19,7 @@ def b(tape, i):
         tape = tape[:i]+"0"+tape[i+1:]
         d(tape, i-1)
     else:
-        print(tape)
+        qr(tape, i-1)
 
 def c(tape, i):
     if (tape[i] == "0"):
@@ -29,7 +29,7 @@ def c(tape, i):
         tape = tape[:i]+"0"+tape[i+1:]
         e(tape, i-1)
     else:
-        print(tape)
+        qr(tape, i-1)
 
 def d(tape, i):
     if (tape[i] == "0"):
@@ -46,4 +46,15 @@ def e(tape, i):
         tape = tape[:i]+"0"+tape[i+1:]
         a(tape, i+1)
 
+def qa(tape, i):
+    if (tape[i] != " "):
+        f(tape, i-1)
+    else:
+        print(tape)
+
+def qr(tape, i):
+    if (tape[i] != " "):
+        f(tape, i-1)
+    else:
+        print(tape)
 a(tape, 1)
