@@ -57,4 +57,5 @@ def qr(tape, i):
         f(tape, i-1)
     else:
         print(tape)
+
 a(tape, 1)
