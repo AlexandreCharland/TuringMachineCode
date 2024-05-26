@@ -2,9 +2,8 @@
 #x^2 == p-2 mod p
 import sys
 
-#bitInput = sys.argv[1]
-#tape = " "+bitInput+" "
-tape = " 10 "
+bitInput = sys.argv[1]
+tape = " "+bitInput+" "
 
 def a(tape, i):
     if (tape[i] != " "):
