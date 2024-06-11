@@ -22,9 +22,9 @@ def b(tape, i):
 
 def c(tape, i):
     if (tape[i] == "0"):
-        b(tape, i-1)
+        b(tape, i+1)
     elif (tape[i] == "1"):
-        c(tape, i-1)
+        c(tape, i+1)
     else:
         print("Rejected")
 
